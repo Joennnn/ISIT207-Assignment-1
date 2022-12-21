@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</header>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="address.html">Shipping Details</a></li>
+            <li><a href="checkout.html">Payment</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="checkout-container">
+        <div class="card__container">
+            <div class="delivery-date">
+                <form class="checkoutform" name="checkout" action="" onsubmit="return validatePayment()"  method="post">
+                    <h1>
+                        Payment Information
+                    </h1>
+                    <div class="cc-num">
+                        <label>Credit Card Number</label>
+                        <input type="text" name="cc-num" maxlength="16" placeholder="8888-8888-8888-8888" required>
+                    </div>
+                    <div class="cc-info">
+                        <label>Expiry</label>
+                        <input type="text" name="cc-info" maxlength="7" placeholder="MM/YY" pattern="([0-9]{2}[/]?){2}" required>
+                    </div>
+                    <div class="card-num">
+                        <label for="cvv">CVC/CVV</label>
+                        <input type="text" name="cvv" maxlength="3"  placeholder="123"/>
+                    </div>
+                    <div class="deliverydate">
+                        <div>
+                            <label for="delivery">Devliery Date</label>
+                            <input type="date" class="delivery" value="13-10-2021" min="13-10-2021">
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button type="submit">Confirm and Pay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

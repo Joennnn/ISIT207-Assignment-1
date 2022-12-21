@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Address</title>
+    <link rel="stylesheet" href="css/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</header>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="address.html">Shipping Details</a></li>
+            <li><a href="checkout.html">Payment</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="checkout-container">
+        <div class="card__container">
+            <div class="delivery-date">
+                <form class="checkoutform" name="checkout" action="" onsubmit="return validateAddress()">
+                    <h1>
+                        Shipping Details
+                    </h1>
+                    <div class="name">
+                        <div>
+                            <label for="fname">First</label>
+                            <input type="text" name="fname" placeholder="John" pattern="[A-Za-z]">
+                        </div>
+                        <div>
+                            <label for="lname">Last</label>
+                            <input type="text" name="lname" placeholder="Doe" pattern="[A-Za-z]">
+                        </div>
+                    </div>
+                    <div class="street">
+                        <label for="name">Street</label>
+                        <input type="text" name="address" >
+                    </div>
+                    <div class="address">
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" name="city" placeholder="Singapore" pattern="[A-Za-z]">
+                        </div>
+                        <div>
+                            <label for="state">State</label>
+                            <input type="text" name="state" placeholder="Singapore" pattern="[A-Za-z]">
+                        </div>
+                        <div>
+                            <label for="zip">Zip</label>
+                            <input type="text" name="zip" placeholder="000000" maxlength="6">
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button type="submit">To Payment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

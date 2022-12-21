@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 30px;
+}
+
+/* Index.html */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+    width: 33%;
+    text-align: center;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #444;
+  }
+
+.container {
+    width: 100%;
+}
+
+.toprec {
+    overflow: auto;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.toprec img {
+    float: right;
+    width: 250px;
+    height: auto;
+}
+
+figcaption.popup {
+    padding: 10px;
+    background: lightgray;
+    position: absolute;
+    visibility: hidden;
+}
+
+figure.thumbnail:hover figcaption.popup {
+    position: absolute;
+    top: 25%;
+    left: 64%;
+    visibility: visible;
+}
+
+.content-container {
+    width: 100%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: 10px;
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 90%;
+    position: relative;
+  }
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+.snacktable img {
+    width: 200px;
+    height: auto;
+}
+
+.buttonimg {
+    line-height: 15px;
+    position: absolute;           
+    right: 150px;                    
+    top: 90%;                      
+    transform: translateY(-50%);   
+}
+
+   /* checkout.html */
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 3%;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkout-container {
+    width: 60%;
+    padding: 5% 10%;
+}
+
+h1 {
+    align-self: center;
+}
+
+.checkoutform {
+    width: 100%;
+    margin-top: 20px;
+    }
+.checkoutform input    
+{
+    width: 100%;
+    min-height: 25px;
+    border: 0;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    margin-top: 5px;
+    color: maroon;
+    border-radius: 4px;
+}
+
+.checkoutform label {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: maroon;
+    }
+
+.checkoutform h1 {
+        font-size: 24px;
+        line-height: 10px;
+        color: #493b76;
+        letter-spacing: 1px;
+    }
+    .checkoutform h1:nth-of-type(2) {
+        margin-top: 10%;
+    }
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+.name div {
+    width: 45%;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+}
+.address div {
+    width: 30%;
+}
+
+.cc-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cc-info div {
+    width: 20%;
+}
+
+.btns {
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+}
